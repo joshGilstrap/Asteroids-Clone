@@ -15,6 +15,8 @@ class Asteroid(pygame.sprite.Sprite):
         self.rect = self.image.get_rect(center=(x, y))
         self.x = x
         self.y = y
+        self.rect.x = x
+        self.rect.y = y
         
         self.speed_x = random.uniform(-ASTEROID_SPEED, ASTEROID_SPEED)
         self.speed_y = random.uniform(-ASTEROID_SPEED, ASTEROID_SPEED)
